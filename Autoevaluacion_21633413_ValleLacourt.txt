@@ -14,9 +14,9 @@ RNF13. Uso de git: 1
 
 RF01 - Clases y estructuras que forman el programa: 0
 RF02 - Menú interactivo por terminal: 0
-RF03 - TDA Player - constructor: 0
-RF04 - TDA Piece - constructor: 0
-RF05 - TDA Board - constructor: 0
+RF03 - TDA Player - constructor: 1
+RF04 - TDA Piece - constructor: 1
+RF05 - TDA Board - constructor: 1
 RF06 - TDA Board - otros - sePuedeJugar?: 0
 RF07 - TDA Board - modificador - jugar ficha: 0
 RF08 - TDA Board - otros - verificar victoria vertical: 0
