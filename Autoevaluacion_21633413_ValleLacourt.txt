@@ -17,10 +17,10 @@ RF02 - Menú interactivo por terminal: 0
 RF03 - TDA Player - constructor: 1
 RF04 - TDA Piece - constructor: 1
 RF05 - TDA Board - constructor: 1
-RF06 - TDA Board - otros - sePuedeJugar?: 0
-RF07 - TDA Board - modificador - jugar ficha: 0
-RF08 - TDA Board - otros - verificar victoria vertical: 0
-RF09 - TDA Board - otros - verificar victoria horizontal: 0
+RF06 - TDA Board - otros - sePuedeJugar?: 1
+RF07 - TDA Board - modificador - jugar ficha: 1
+RF08 - TDA Board - otros - verificar victoria vertical: 1
+RF09 - TDA Board - otros - verificar victoria horizontal: 1
 RF10 - TDA Board - otros - verificar victoria diagonal: 0
 RF11 - TDA Board - otros - entregarGanador: 0
 RF12 - TDA Game - constructor: 0

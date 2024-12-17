@@ -11,7 +11,8 @@ public class Player {
     int remaining_pieces;
 
     //metodos
-    //constructor RF03
+    //constructor
+    //RF03
     public Player(int id, String name, String color, int wins, int losses, int draws, int remaining_pieces) {
         this.id = id;
         this.name = name;
