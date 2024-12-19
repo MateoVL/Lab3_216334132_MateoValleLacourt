@@ -1,14 +1,14 @@
 package org.example;
 
-public class Player {
+public class Player implements Tda_Player {
     //atributos
-    int id;
-    String name;
-    String color;
-    int wins;
-    int losses;
-    int draws;
-    int remaining_pieces;
+    private int id;
+    private String name;
+    private String color;
+    private int wins;
+    private int losses;
+    private int draws;
+    private int remaining_pieces;
 
     //metodos
     //constructor
@@ -21,6 +21,10 @@ public class Player {
         this.losses = losses;
         this.draws = draws;
         this.remaining_pieces = remaining_pieces;
+    }
+    @Override
+    public String getColor() {
+        return color;
     }
 
     @Override

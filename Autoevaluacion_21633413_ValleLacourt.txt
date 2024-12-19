@@ -21,9 +21,9 @@ RF06 - TDA Board - otros - sePuedeJugar?: 1
 RF07 - TDA Board - modificador - jugar ficha: 1
 RF08 - TDA Board - otros - verificar victoria vertical: 1
 RF09 - TDA Board - otros - verificar victoria horizontal: 1
-RF10 - TDA Board - otros - verificar victoria diagonal: 0
-RF11 - TDA Board - otros - entregarGanador: 0
-RF12 - TDA Game - constructor: 0
+RF10 - TDA Board - otros - verificar victoria diagonal: 1
+RF11 - TDA Board - otros - entregarGanador: 1
+RF12 - TDA Game - constructor: 1
 RF13 - TDA Game - otros - history: 0
 RF14 - TDA Game - otros - esEmpate?: 0
 RF15 - TDA Player - otros - actualizarEstadisticas: 0

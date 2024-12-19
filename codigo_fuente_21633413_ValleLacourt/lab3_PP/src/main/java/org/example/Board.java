@@ -2,14 +2,15 @@ package org.example;
 
 import java.util.Arrays;
 
-public class Board {
+public class Board implements Tda_Board{
     //Atributos
-    String[][] tablero;
-    String p1;
-    String p2;
+    private String[][] tablero;
+    private Piece piece1;
+    private Piece piece2;
 
 
     //Metodos
+
     //Constructores
     //RF05
     public Board() {
@@ -28,31 +29,36 @@ public class Board {
 
 
     //modificadores
-    public void setP1(String p1) {
-        this.p1 = p1;
+    @Override
+    public void setPiece1(Player p1) {
+        this.piece1 = new Piece(p1.getColor());
     }
 
-    public void setP2(String p2) {
-        this.p2 = p2;
+    @Override
+    public void setPiece2(Player p2) {
+        this.piece2 = new Piece(p2.getColor());
     }
 
     //RF07
     // malas coordenadas o columna llena se rompe, verificar en game_jugar
+    @Override
     public void play_piece(int columna, Piece pieza){
         for (int i = 0; i < 6; i++) {
             if (i==5 && tablero[i][columna].equals("( )")){
-                tablero[i][columna] = pieza.pieza;
+                tablero[i][columna] = pieza.getPieza();
                 break;
             }
             if (!tablero[i + 1][columna].equals("( )")){
-                tablero[i][columna] = pieza.pieza;
+                tablero[i][columna] = pieza.getPieza();
                 break;
             }
         }
     }
 
     //otros
+
     //RF06
+    @Override
     public Boolean can_play(){
         for (int i = 0; i < 7; i++) {
             if (tablero[0][i].equals("( )")) {
@@ -63,6 +69,7 @@ public class Board {
     }
 
     //RF08
+    @Override
     public int check_vertical_win() {
         int contador = 1;
         for (int i = 0; i < 7; i++) {
@@ -74,8 +81,8 @@ public class Board {
                     contador = contador + 1;
                 }
                 if (contador == 4) {
-                    if (tablero[j][i].equals(p1)) return 1;
-                    else if (tablero[j][i].equals(p2)) return 2;
+                    if (tablero[j][i].equals(piece1.getPieza())) return 1;
+                    else if (tablero[j][i].equals(piece2.getPieza())) return 2;
                 }
             }
         }
@@ -83,6 +90,7 @@ public class Board {
     }
 
     //RF09
+    @Override
     public int check_horizontal_win() {
         int contador = 1;
         for (int i = 0; i < 6; i++) {
@@ -94,15 +102,62 @@ public class Board {
                     contador = contador + 1;
                 }
                 if (contador == 4) {
-                    if (tablero[i][j].equals(p1)) return 1;
-                    else if (tablero[i][j].equals(p2)) return 2;
+                    if (tablero[i][j].equals(piece1.getPieza())) return 1;
+                    else if (tablero[i][j].equals(piece2.getPieza())) return 2;
                 }
             }
         }
         return 0;
     }
 
+    //RF10
+    @Override
+    public int check_diagonal_win() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                if (tablero[i][j].equals("( )")) {
+                    j=4;
+                }
+                else if (tablero[i][j].equals(tablero[i+1][j+1]) &&
+                        tablero[i][j].equals(tablero[i+2][j+2]) &&
+                        tablero[i][j].equals(tablero[i+3][j+3])) {
+                    if (tablero[i][j].equals(piece1.getPieza())) return 1;
+                    else if (tablero[i][j].equals(piece2.getPieza())) return 2;
+                }
+            }
+        }
+        for (int i = 5; i > 2; i--) {
+            for (int j = 0; j < 4; j++) {
+                if (tablero[i][j].equals("( )")) {
+                    j=4;
+                }
+                else if (tablero[i][j].equals(tablero[i-1][j+1]) &&
+                        tablero[i][j].equals(tablero[i-2][j+2]) &&
+                        tablero[i][j].equals(tablero[i-3][j+3])) {
+                    if (tablero[i][j].equals(piece1.getPieza())) return 1;
+                    else if (tablero[i][j].equals(piece2.getPieza())) return 2;
+                }
+            }
+        }
+        return 0;
+    }
 
+    //RF11
+    @Override
+    public int check_winner() {
+        int winnerV = check_vertical_win();
+        int winnerH = check_horizontal_win();
+        int winnerD = check_diagonal_win();
+        if (winnerV >= winnerH && winnerV >= winnerD){
+            return winnerV;
+        }
+        else if (winnerH >= winnerV && winnerH >= winnerD){
+            return winnerH;
+        }
+        return winnerD;
+    }
+
+    @Override
     public void mostrarTablero() {
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 7; j++) {
@@ -120,13 +175,12 @@ public class Board {
         }
     }
 
-
     @Override
     public String toString() {
         return "Board{" +
                 "tablero=" + Arrays.toString(tablero) +
-                ", p1=" + p1 +
-                ", p2=" + p2 +
+                ", p1=" + piece1 +
+                ", p2=" + piece2 +
                 '}';
     }
 }

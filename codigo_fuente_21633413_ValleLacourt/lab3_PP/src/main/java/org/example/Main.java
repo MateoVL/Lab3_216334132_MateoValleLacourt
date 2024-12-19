@@ -9,9 +9,12 @@ public class Main {
         Player p1 = new Player(1, "Mateo", "rojo", 0,0,0,21);
         System.out.println(p1);
 
+        Player p2 = new Player(2, "Juan", "amarillo", 0,0,0,21);
+        System.out.println(p1);
+
         Board b = new Board();
-        b.setP1(pieza_roja.pieza);
-        b.setP2(pieza_amarilla.pieza);
+        b.setPiece1(p1);
+        b.setPiece2(p2);
         b.mostrarTablero();
 
         System.out.println(b.can_play());
@@ -20,6 +23,11 @@ public class Main {
         b.mostrarTablero();
         b.play_piece(1, pieza_amarilla);
         b.mostrarTablero();
+
+        Game g1 = new Game();
+        g1.setPlayer1(p1);
+        g1.setPlayer2(p2);
+        System.out.println(g1);
 
     }
 }

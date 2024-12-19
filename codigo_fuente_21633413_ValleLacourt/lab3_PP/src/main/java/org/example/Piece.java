@@ -1,8 +1,8 @@
 package org.example;
 
-public class Piece {
+public class Piece implements Tda_Piece{
     //Atributos
-    String pieza;
+    private String pieza;
 
     //Metodos
     //Constructor
@@ -10,5 +10,10 @@ public class Piece {
     public Piece(String color) {
         char caracter = Character.toUpperCase(color.charAt(0));
         this.pieza = "(" + caracter + ")";
+    }
+
+    @Override
+    public String getPieza() {
+        return pieza;
     }
 }
