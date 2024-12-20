@@ -24,8 +24,8 @@ RF09 - TDA Board - otros - verificar victoria horizontal: 1
 RF10 - TDA Board - otros - verificar victoria diagonal: 1
 RF11 - TDA Board - otros - entregarGanador: 1
 RF12 - TDA Game - constructor: 1
-RF13 - TDA Game - otros - history: 0
-RF14 - TDA Game - otros - esEmpate?: 0
+RF13 - TDA Game - otros - history: 1
+RF14 - TDA Game - otros - esEmpate?: 1
 RF15 - TDA Player - otros - actualizarEstadisticas: 0
 RF16 - TDA Game - selector - getCurrentPlayer: 0
 RF17 - TDA Game - selector - board-get-state: 0

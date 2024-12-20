@@ -13,30 +13,60 @@ public class Player implements Tda_Player {
     //metodos
     //constructor
     //RF03
-    public Player(int id, String name, String color, int wins, int losses, int draws, int remaining_pieces) {
-        this.id = id;
+    public Player(String name, String color, int remaining_pieces) {
+        countId=countId+1;
+        this.id = countId;
         this.name = name;
         this.color = color;
-        this.wins = wins;
-        this.losses = losses;
-        this.draws = draws;
+        this.wins = 0;
+        this.losses = 0;
+        this.draws = 0;
         this.remaining_pieces = remaining_pieces;
     }
+
+    //Selectores
     @Override
     public String getColor() {
         return color;
     }
 
     @Override
-    public String toString() {
-        return "Player{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", color=" + color +
-                ", wins=" + wins +
-                ", losses=" + losses +
-                ", draws=" + draws +
-                ", remaining_pieces=" + remaining_pieces +
-                '}';
+    public int getRemaining_pieces() {
+        return remaining_pieces;
     }
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    //Modificadores
+    @Override
+    public void sub_pieces(){
+        remaining_pieces--;
+    }
+
+    //Otros
+    //RF15
+    @Override
+    public void update_stats(String resultado){
+        if(resultado.equals("win")){
+            this.wins += 1;
+        }
+        if(resultado.equals("loss")){
+            this.losses += 1;
+        }
+        if(resultado.equals("draw")){
+            this.draws += 1;
+        }
+    }
+
+    @Override
+    public void show_stats(){
+        System.out.println(name + "("+color+")");
+        System.out.println("Victorias: " + wins);
+        System.out.println("Derrotas: " + losses);
+        System.out.println("Empates: " + draws);
+    }
+
+    private static int countId = 0;
 }
