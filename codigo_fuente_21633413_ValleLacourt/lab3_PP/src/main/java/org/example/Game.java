@@ -30,7 +30,36 @@ public class Game implements Tda_Game {
     public Game() {}
 
     //Selectores
+    //RF16
+    @Override
+    public Player get_current_player() {
+        if (turn == 1) {
+            return player1;
+        }
+        return player2;
+    }
 
+    @Override
+    public Board getBoard() {
+        return board;
+    }
+
+    @Override
+    public int getTurn() {
+        return turn;
+    }
+
+    @Override
+    public Player getPlayer1() {
+        return player1;
+    }
+
+    @Override
+    public Player getPlayer2() {
+        return player2;
+    }
+
+    //Modificadores
 
 
     //Otros
@@ -49,4 +78,9 @@ public class Game implements Tda_Game {
                 && player2.getRemaining_pieces() == 0;
     }
 
+    //RF17
+    @Override
+    public void show_Board() {
+        board.mostrarTablero();
+    }
 }
