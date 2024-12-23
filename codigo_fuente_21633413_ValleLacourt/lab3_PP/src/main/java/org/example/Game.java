@@ -60,7 +60,50 @@ public class Game implements Tda_Game {
     }
 
     //Modificadores
+    //RF18
+    @Override
+    public void end_game() {
+        estado = 0;
+        if (is_draw()) {
+            player1.update_stats("draw");
+            player2.update_stats("draw");
+        } else if (board.check_winner() == 1) {
+            player1.update_stats("win");
+            player2.update_stats("loss");
+        } else if (board.check_winner() == 2) {
+            player1.update_stats("loss");
+            player2.update_stats("win");
+        }
+    }
 
+    //RF19
+    @Override
+    public void player_set_move(Player jugador, int columna) {
+        if (jugador == get_current_player() && 0 <= columna && columna <= 6) {
+            if (board.can_play_columna(columna)) {
+                if (jugador == player1) {
+                    board.play_piece(columna, board.getPiece1());
+                    player1.sub_pieces();
+                    turn++;
+                    String[] movimiento = new String[]{player1.getColor(), String.valueOf(columna + 1)};
+                    historial.add(movimiento);
+                } else if (jugador == player2) {
+                    board.play_piece(columna, board.getPiece2());
+                    player2.sub_pieces();
+                    turn--;
+                    historial.add(new String[]{player2.getColor(), String.valueOf(columna + 1)});
+                }
+
+                if (is_draw()) {
+                    end_game();
+                    System.out.println("### Empate! ###");
+
+                } else if (board.check_winner() != 0) {
+                    end_game();
+                }
+            }
+        }
+    }
 
     //Otros
     //RF13

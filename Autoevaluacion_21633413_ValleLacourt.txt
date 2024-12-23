@@ -29,5 +29,5 @@ RF14 - TDA Game - otros - esEmpate?: 1
 RF15 - TDA Player - otros - actualizarEstadisticas: 1
 RF16 - TDA Game - selector - getCurrentPlayer: 1
 RF17 - TDA Game - selector - board-get-state: 1
-RF18 - TDA Game - modificador - game-set-end: 0
-RF19 - TDA Game - modificador - realizarMovimiento: 0
+RF18 - TDA Game - modificador - game-set-end: 1
+RF19 - TDA Game - modificador - realizarMovimiento: 1
