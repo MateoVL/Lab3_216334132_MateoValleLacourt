@@ -1,32 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaa54346-adc1-4480-b1aa-a5855481f4c1" name="Changes" comment="">
+    <list default="true" id="68fddddb-cbe6-4d5e-8b77-c5e19b243ca1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3_PP/src/main/java/org/example/Tda_Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/lab3_PP">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
-  <component name="ProjectId" id="2qcQYuTfMFor1a0pdEZbpAc2nDE" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2qMe5oXentKgumQUzPoZrqMK2rG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.lab3_PP [:org.example.Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive/Universidad/2024-2/Paradigmas de Programacion/Laboratorio PP/LAB3/Lab3_216334132_MateoValleLacourt/codigo_fuente_21633413_ValleLacourt",
+    "last_opened_file_path": "D:/Mateo/OneDrive/Universidad/2024-2/Paradigmas de Programacion/Laboratorio PP/LAB3/Lab3_216334132_MateoValleLacourt/codigo_fuente_21633413_ValleLacourt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -42,12 +89,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aaa54346-adc1-4480-b1aa-a5855481f4c1" name="Changes" comment="" />
-      <created>1734959434706</created>
+      <changelist id="68fddddb-cbe6-4d5e-8b77-c5e19b243ca1" name="Changes" comment="" />
+      <created>1734476690750</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734959434706</updated>
-      <workItem from="1734959436022" duration="38000" />
+      <updated>1734476690750</updated>
+      <workItem from="1734476691866" duration="534000" />
+      <workItem from="1734574724433" duration="13000" />
+      <workItem from="1734959944428" duration="5283000" />
+      <workItem from="1735061498865" duration="76000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,7 @@ public interface Tda_Player {
 
     //modificadores
     void sub_pieces();
+    void setPieces(int pieces);
     void update_stats(String resultado);
 
     //otros

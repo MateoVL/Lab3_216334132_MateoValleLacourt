@@ -45,6 +45,11 @@ public class Player implements Tda_Player {
         remaining_pieces--;
     }
 
+    @Override
+    public void setPieces(int pieces) {
+        remaining_pieces = pieces;
+    }
+
     //Otros
     //RF15
     @Override
