@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * interface que representa el TDA Game con sus metodos
+ */
 public interface Tda_Game {
     //Selectores
     //RF16
@@ -8,6 +11,7 @@ public interface Tda_Game {
     int getTurn();
     Player getPlayer1();
     Player getPlayer2();
+    int getEstado();
 
     //Modificadores
     //RF18

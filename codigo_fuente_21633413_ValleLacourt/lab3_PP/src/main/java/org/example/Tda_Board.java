@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * interface que representa el TDA Board con sus metodos
+ */
 public interface Tda_Board {
     //Selectores
     Piece getPiece1();

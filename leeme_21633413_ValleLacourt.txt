@@ -1,1 +1,21 @@
+Instrucciones de Uso:
 
+La entrega cuenta con una carpeta con la documentacion con JavaDoc,
+para acceder a la pagina con la informacion, se debe abrir el archivo con
+nombre: ”index.html”.
+
+Para poder jugar, se debe abrir la carpeta de codigo fuente, donde se encontraran dos carpetas: .idea y lab3 PP,
+hacer click derecho en la direccion de la carpeta codigo fuente y copiarla.
+Luego se debe abrir IntelliJ IDEA, seleccionar arriba a la izquierda la
+opcion FILE y despues la opcion de Open. Seguido a eso se debe pegar la
+direccion y clickear Ok y presionar el boton de run en la parte superior
+a la derecha, inmediatamente se debe haber cargado la consola, con
+mensajes de que el codigo se esta compilando con Gradle, seguido por el
+menu principal del juego.
+
+Posibles errores:
+Si no tiene el SDK de Java 11, el programa le avisara y le pedira descargar
+una version de SDK, usted debe elegir cualquiera de las opciones de las
+versiones 11 brindadas por IntelliJ.
+
+El proyecto se ejecuto en windows 10, no se como sea con otros sistemas operativos.

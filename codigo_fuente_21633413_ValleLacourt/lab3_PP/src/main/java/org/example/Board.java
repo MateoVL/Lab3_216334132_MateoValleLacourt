@@ -2,6 +2,9 @@ package org.example;
 
 import java.util.Arrays;
 
+/**
+ * Objeto que representa un tablero
+ */
 public class Board implements Tda_Board {
     //Atributos
     private String[][] tablero;
@@ -13,6 +16,10 @@ public class Board implements Tda_Board {
 
     //Constructores
     //RF05
+
+    /**
+     * RF05, Constructor de Board
+     */
     public Board() {
         this.tablero = new String[][]{
                 {"( )", "( )", "( )", "( )", "( )", "( )", "( )"},
@@ -47,6 +54,12 @@ public class Board implements Tda_Board {
     }
 
     //RF07
+
+    /**
+     * RF07, Colocar una pieza en lo mas bajo de una columna
+     * @param columna int
+     * @param pieza Piece
+     */
     @Override
     public void play_piece(int columna, Piece pieza) {
         for (int i = 0; i < 6; i++) {
@@ -64,6 +77,11 @@ public class Board implements Tda_Board {
     //otros
 
     //RF06
+
+    /**
+     * RF06, Verifica si se puede jugar en el tablero
+     * @return Boolean
+     */
     @Override
     public Boolean can_play() {
         for (int i = 0; i < 7; i++) {
@@ -80,6 +98,11 @@ public class Board implements Tda_Board {
     }
 
     //RF08
+
+    /**
+     * RF08, Verifica victoria vertical, y entrega 1 si gana jugador1, 2 si gana jugador2 o 0 si no hay victoria
+     * @return int
+     */
     @Override
     public int check_vertical_win() {
         int contador = 1;
@@ -100,6 +123,11 @@ public class Board implements Tda_Board {
     }
 
     //RF09
+
+    /**
+     * RF09, Verifica victoria horizontal, y entrega 1 si gana jugador1, 2 si gana jugador2 o 0 si no hay victoria
+     * @return int
+     */
     @Override
     public int check_horizontal_win() {
         int contador = 1;
@@ -120,6 +148,11 @@ public class Board implements Tda_Board {
     }
 
     //RF10
+
+    /**
+     * RF10, Verifica victoria diagonal superior e inferior, y entrega 1 si gana jugador1, 2 si gana jugador2 o 0 si no hay victoria
+     * @return int
+     */
     @Override
     public int check_diagonal_win() {
         for (int i = 0; i < 3; i++) {
@@ -150,6 +183,11 @@ public class Board implements Tda_Board {
     }
 
     //RF11
+
+    /**
+     * RF11, usa las tres verificaciones y entrega un resultado
+     * @return int
+     */
     @Override
     public int check_winner() {
         int winnerV = check_vertical_win();

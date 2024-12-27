@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * interface que representa el TDA Player con sus metodos
+ */
 public interface Tda_Player {
     //Selectores
     String getColor();

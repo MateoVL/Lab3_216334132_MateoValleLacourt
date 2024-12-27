@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * Objeto que representa a un jugador
+ */
 public class Player implements Tda_Player {
     //atributos
     private int id;
@@ -13,6 +16,13 @@ public class Player implements Tda_Player {
     //metodos
     //constructor
     //RF03
+
+    /**
+     * RF03, constructor Player
+     * @param name String
+     * @param color String
+     * @param remaining_pieces int
+     */
     public Player(String name, String color, int remaining_pieces) {
         countId=countId+1;
         this.id = countId;
@@ -25,6 +35,8 @@ public class Player implements Tda_Player {
     }
 
     //Selectores
+
+
     @Override
     public String getColor() {
         return color;
@@ -52,6 +64,11 @@ public class Player implements Tda_Player {
 
     //Otros
     //RF15
+
+    /**
+     * RF15, actualiza las estadisticas de un Player dependiendo de un resultado
+     * @param resultado String
+     */
     @Override
     public void update_stats(String resultado){
         if(resultado.equals("win")){

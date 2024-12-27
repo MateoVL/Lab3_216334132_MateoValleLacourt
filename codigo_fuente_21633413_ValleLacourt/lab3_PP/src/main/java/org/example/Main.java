@@ -2,6 +2,10 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * RF02, Aca se encuentra el manu interactivo
+     * @param args String[]
+     */
     public static void main(String[] args) {
         Game juego = null;
         Player jugador1 = null;
@@ -69,7 +73,14 @@ public class Main {
                         System.out.println("No se ha creado ningún juego.");
                         break;
                     }
+                    if(juego.getEstado() == 0){
+                        System.out.println("El juego está terminado");
+                        System.out.println("Si quieres jugar, crea un nuevo juego");
+                        break;
+                    }
+
                     System.out.println("### Realizar Jugada ###");
+
                     if (juego.getTurn()==1){
                         System.out.println("Turno de " + juego.getPlayer1().getName() +
                                 "(" + juego.getPlayer1().getColor() + ")");
@@ -78,7 +89,7 @@ public class Main {
                         int columna = input.nextInt() - 1;
                         juego.player_set_move(juego.getPlayer1(), columna);
                     }
-                    else if (juego.getTurn()==2){
+                    else {
                         System.out.println("Turno de " + juego.getPlayer2().getName() +
                                 "(" + juego.getPlayer2().getColor() + ")");
                         System.out.println("Cantidad de fichas: " + juego.getPlayer2().getRemaining_pieces());
@@ -86,6 +97,7 @@ public class Main {
                         int columna = input.nextInt() - 1;
                         juego.player_set_move(juego.getPlayer2(), columna);
                     }
+
                     System.out.println("### Movimiento realizado: ###");
                     juego.show_Board();
 
@@ -119,9 +131,7 @@ public class Main {
 
                         }
                         else if(respuesta.equals("N")){
-                            juego = null;
-                            jugador1 = null;
-                            jugador2 = null;
+                            break;
                         }
                     }
                     break;

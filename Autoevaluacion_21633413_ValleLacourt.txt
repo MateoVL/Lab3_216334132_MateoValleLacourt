@@ -12,8 +12,8 @@ RNF11. Diagrama de analisis: 1
 RNF12. Diagrama de diseño: 1
 RNF13. Uso de git: 1
 
-RF01 - Clases y estructuras que forman el programa: 0
-RF02 - Menú interactivo por terminal: 0
+RF01 - Clases y estructuras que forman el programa: 1
+RF02 - Menú interactivo por terminal: 1
 RF03 - TDA Player - constructor: 1
 RF04 - TDA Piece - constructor: 1
 RF05 - TDA Board - constructor: 1
