@@ -2,12 +2,31 @@ plugins {
     id 'java'
 }
 
+plugins {
+    id 'application'
+}
+
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
+
+run {
+    standardInput = System.in
+}
+
+application {
+    mainClass = 'org.example.Main'
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
